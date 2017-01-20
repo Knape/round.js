@@ -1,4 +1,4 @@
-# round.j
+# round.js
 
 > Round a number to a specific number, by decimal or nearest
 
