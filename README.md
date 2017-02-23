@@ -1,7 +1,10 @@
 # round.js
 
-> Round a number to a specific number, by decimal or nearest
+[![Build Status](https://travis-ci.org/Knape/round.js.svg?branch=master)](https://travis-ci.org/Knape/round.js)
+[![Coverage Status](https://coveralls.io/repos/github/Knape/round.js/badge.svg?branch=master)](https://coveralls.io/github/Knape/round.js?branch=master)
+[![Code Climate](https://lima.codeclimate.com/github/Knape/round.js/badges/gpa.svg)](https://lima.codeclimate.com/github/Knape/round.js)
 
+> Round a number to a specific number, by decimal or nearest
 
 ## Install
 
