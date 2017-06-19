@@ -8,6 +8,7 @@ const near = type => (x, nearest) => {
    return Number(Math[type](x / nearest) * nearest);
 };
 
+export const to = near('round');
 export const next = near('ceil');
 export const prev = near('floor');
 export const up = round('ceil');

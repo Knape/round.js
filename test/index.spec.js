@@ -19,11 +19,31 @@ describe('Util functions', () => {
   });
 
   describe('Number to nearest next value', () => {
-    it('Should pass', () => {
+    it('Round up number to nearest 20', () => {
       expect(round.next(11, 20)).to.equal(20);
+    });
+    it('Round up number to nearest 200', () => {
       expect(round.next(111, 100)).to.equal(200);
+    });
+    it('Round up number to nearest 150', () => {
       expect(round.next(111.43, 50)).to.equal(150);
-      expect(round.next(111.63, 0.50, 1)).to.equal(112);
+    });
+    it('Round up number to nearest 0.5', () => {
+      expect(round.next(111.63, 0.50)).to.equal(112);
+    });
+  });
+  describe('Number to nearest next value', () => {
+    it('Round down number to nearest 20', () => {
+      expect(round.prev(11, 20)).to.equal(0);
+    });
+    it('Round down number to nearest 200', () => {
+      expect(round.prev(111, 100)).to.equal(100);
+    });
+    it('Round down number to nearest 150', () => {
+      expect(round.prev(111.43, 50)).to.equal(100);
+    });
+    it('Round down number to nearest 0.5', () => {
+      expect(round.prev(111.63, 0.50)).to.equal(111.5);
     });
   });
 });
