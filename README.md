@@ -41,30 +41,47 @@ round.js: Tiny number-parser lib
 
 Returns **Number**
 
-#### round / to
+#### round
 
 Rounds a floating number to nearest number / float based on `precision`
 
 **Parameters**
 
--   `Number` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Type of event to listen for, or `"*"` for all events
+-   `Number`
 -   `precision`
 
-#### off
+#### round.up
 
-Remove an event handler for the given type.
-
-**Parameters**
-
--   `type` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Type of event to unregister `handler` from, or `"*"`
--   `handler` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** Handler function to remove
-
-#### emit
-
-Invoke all handlers for the given type.
-If present, `"*"` handlers are invoked prior to type-matched handlers.
+Rounds a floating `up` number to nearest number / float based on `precision`
 
 **Parameters**
 
--   `type` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The event type to invoke
--   `event` **\[Any]** An event object, passed to each handler
+-   `Number`
+-   `precision`
+
+#### round.down
+
+Rounds a floating `down` number to nearest number / float based on `precision`
+
+**Parameters**
+
+-   `Number`
+-   `precision`
+
+#### round.next
+
+Increment the number until it reaches the next `next` number
+
+**Parameters**
+
+-   `Number`
+-   `next`
+
+#### round.prev
+
+Decrement the number until it reaches the previous `prev` number
+
+**Parameters**
+
+-   `Number`
+-   `prev`
