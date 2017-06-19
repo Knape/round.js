@@ -3,7 +3,7 @@ const expect = require('chai').expect;
 
 describe('Util functions', () => {
   describe('Round number', () => {
-
+    expect(round.default(1.234, 2)).to.equal(1.23);
   });
 
   describe('Round number up', () => {
