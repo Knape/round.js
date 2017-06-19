@@ -10,7 +10,7 @@
     "coveralls": "npm run cover -- --report lcovonly && cat ./test/coverage/lcov.info | coveralls",
     "lint": "node_modules/.bin/eslint -c .eslintrc src/"
   },
-  "keywords": ["round", "numbers", "float", "increment"],
+  "keywords": ["round", "numbers", "float", "increment", "decriment"],
   "author": "Philip Knape <philip.knape@gmail.com>",
   "repository": {
     "type": "git",
