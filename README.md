@@ -28,6 +28,9 @@ round.up(1.234, 2);
 round.down(1.234, 2);
 //=> 1.23
 
+round.to(11, 5);
+//=> 10
+
 round.next(11, 10);
 //=> 20
 
@@ -50,6 +53,11 @@ Rounds a floating number to nearest number / float based on `precision`
 -   `Number`
 -   `precision`
 
+```js
+round(1.234, 2);
+//=> 1.23
+```
+
 #### round.up
 
 Rounds a floating `up` number to nearest number / float based on `precision`
@@ -58,6 +66,11 @@ Rounds a floating `up` number to nearest number / float based on `precision`
 
 -   `Number`
 -   `precision`
+
+```js
+round.up(1.234, 2);
+//=> 1.24
+```
 
 #### round.down
 
@@ -68,6 +81,28 @@ Rounds a floating `down` number to nearest number / float based on `precision`
 -   `Number`
 -   `precision`
 
+```js
+round.down(1.234, 2);
+//=> 1.23
+```
+
+#### round.near
+
+Increment or decrement the number until it reaches the nearest `near` number
+
+**Parameters**
+
+-   `Number`
+-   `near`
+
+```js
+round.near(11, 5);
+//=> 10
+
+round.near(13, 5);
+//=> 15
+```
+
 #### round.next
 
 Increment the number until it reaches the next `next` number
@@ -77,6 +112,12 @@ Increment the number until it reaches the next `next` number
 -   `Number`
 -   `next`
 
+```js
+round.next(11, 5);
+//=> 15
+```
+
+
 #### round.prev
 
 Decrement the number until it reaches the previous `prev` number
@@ -85,3 +126,8 @@ Decrement the number until it reaches the previous `prev` number
 
 -   `Number`
 -   `prev`
+
+```js
+round.prev(11, 5);
+//=> 10
+```

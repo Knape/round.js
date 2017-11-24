@@ -18,6 +18,15 @@ describe('Util functions', () => {
     });
   });
 
+  describe('Number to nearest next or prev value', () => {
+    it('Round number to nearest number diveded by 5', () => {
+      expect(round.near(11, 5)).to.equal(10);
+    });
+    it('Round number to nearest number diveded by 5', () => {
+      expect(round.near(13, 5)).to.equal(15);
+    });
+  });
+
   describe('Number to nearest next value', () => {
     it('Round up number to nearest 20', () => {
       expect(round.next(11, 20)).to.equal(20);
@@ -32,7 +41,8 @@ describe('Util functions', () => {
       expect(round.next(111.63, 0.50)).to.equal(112);
     });
   });
-  describe('Number to nearest next value', () => {
+
+  describe('Number to nearest prev value', () => {
     it('Round down number to nearest 20', () => {
       expect(round.prev(11, 20)).to.equal(0);
     });
